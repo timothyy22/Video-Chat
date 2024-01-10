@@ -10,7 +10,6 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
     res.redirect(`/${uuidV4()}`)
 })
-
 app.get('/:room', (req, res) => {
     res.render('room' , { roomId: req.params.room})
 })
